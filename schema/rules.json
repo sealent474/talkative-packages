@@ -5,8 +5,14 @@
   "bytes": 5242880,
   "soundSeconds": 10,
   "clickSeconds": 1,
-  "longEvents": ["ring-in", "ring-out"],
-  "clickEvents": ["click", "button-click"],
+  "longEvents": [
+    "ring-in",
+    "ring-out"
+  ],
+  "clickEvents": [
+    "click",
+    "button-click"
+  ],
   "filePath": {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "type": "string",

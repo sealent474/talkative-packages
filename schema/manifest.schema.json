@@ -62,7 +62,10 @@
                 "type": "array",
                 "items": {
                   "type": "string",
-                  "enum": ["dark", "light"]
+                  "enum": [
+                    "dark",
+                    "light"
+                  ]
                 }
               },
               "colors": {
@@ -75,7 +78,11 @@
                 }
               }
             },
-            "required": ["name", "modes", "colors"]
+            "required": [
+              "name",
+              "modes",
+              "colors"
+            ]
           }
         },
         "sounds": {
@@ -136,7 +143,10 @@
                 }
               }
             },
-            "required": ["name", "sounds"]
+            "required": [
+              "name",
+              "sounds"
+            ]
           }
         }
       }
@@ -167,9 +177,20 @@
             "pattern": "\\S"
           }
         },
-        "required": ["file", "title"]
+        "required": [
+          "file",
+          "title"
+        ]
       }
     }
   },
-  "required": ["id", "name", "version", "author", "description", "talkative", "contents"]
+  "required": [
+    "id",
+    "name",
+    "version",
+    "author",
+    "description",
+    "talkative",
+    "contents"
+  ]
 }

@@ -60,6 +60,9 @@ Select them as `[data-part='composer']`.
 | `dialog` | dialogs |
 | `button-primary` | the main button of a dialog or form |
 | `field` | a text field |
+| `segmented` | a row of choices where one is picked |
+| `segmented-option` | one choice in a segmented row; the picked one has data-state="checked" |
+| `segmented-highlight` | the highlight that slides behind the picked choice |
 
 ## Attributes on the root element
 

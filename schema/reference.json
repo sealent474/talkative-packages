@@ -218,27 +218,51 @@
     {
       "name": "field",
       "note": "a text field"
+    },
+    {
+      "name": "segmented",
+      "note": "a row of choices where one is picked"
+    },
+    {
+      "name": "segmented-option",
+      "note": "one choice in a segmented row; the picked one has data-state=\"checked\""
+    },
+    {
+      "name": "segmented-highlight",
+      "note": "the highlight that slides behind the picked choice"
     }
   ],
   "attributes": [
     {
       "name": "data-theme",
-      "values": ["dark", "light"],
+      "values": [
+        "dark",
+        "light"
+      ],
       "note": "the mode in use"
     },
     {
       "name": "data-context",
-      "values": ["servers", "direct", "call", "event"],
+      "values": [
+        "servers",
+        "direct",
+        "call",
+        "event"
+      ],
       "note": "the place the app is in; it picks --color-tint"
     },
     {
       "name": "data-motion",
-      "values": ["reduced"],
+      "values": [
+        "reduced"
+      ],
       "note": "set when the person asks for less motion"
     },
     {
       "name": "data-performance",
-      "values": ["on"],
+      "values": [
+        "on"
+      ],
       "note": "set in performance mode"
     }
   ],

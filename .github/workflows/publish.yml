@@ -14,6 +14,7 @@ concurrency:
 
 jobs:
   publish:
+    name: Publish package catalog
     runs-on: ubuntu-26.04
     permissions:
       contents: read

@@ -242,14 +242,13 @@
       "note": "the mode in use"
     },
     {
-      "name": "data-context",
+      "name": "data-tint",
       "values": [
         "servers",
-        "direct",
-        "call",
-        "event"
+        "talk",
+        "events"
       ],
-      "note": "the place the app is in; it picks --color-tint"
+      "note": "the place the app is in; on any element it sets the hue of --color-accent inside it"
     },
     {
       "name": "data-motion",
@@ -273,29 +272,24 @@
       "light": "#e4e3ec"
     },
     {
-      "name": "--color-panel",
-      "dark": "#0a0b10",
-      "light": "#ecebf2"
-    },
-    {
       "name": "--color-surface",
       "dark": "#101118",
       "light": "#f7f6fa"
     },
     {
-      "name": "--color-surface-raised",
-      "dark": "#1b1c27",
+      "name": "--color-raised",
+      "dark": "#161821",
       "light": "#ffffff"
-    },
-    {
-      "name": "--color-card",
-      "dark": "rgb(25 26 37 / 0.72)",
-      "light": "rgb(255 255 255 / 0.78)"
     },
     {
       "name": "--color-field",
       "dark": "#15161f",
       "light": "#eeedf4"
+    },
+    {
+      "name": "--color-tray",
+      "dark": "#12131b",
+      "light": "#efeef5"
     },
     {
       "name": "--color-line",
@@ -328,24 +322,19 @@
       "light": "#6c6e86"
     },
     {
-      "name": "--color-channel",
-      "dark": "#b9bcd0",
-      "light": "#4a4c63"
+      "name": "--color-ink-disabled",
+      "dark": "rgb(132 135 160 / 0.6)",
+      "light": "rgb(108 110 134 / 0.6)"
     },
     {
       "name": "--color-hover",
-      "dark": "rgb(255 255 255 / 0.06)",
+      "dark": "rgb(190 184 255 / 0.07)",
       "light": "rgb(28 30 60 / 0.06)"
     },
     {
       "name": "--color-selected",
-      "dark": "rgb(255 255 255 / 0.1)",
+      "dark": "rgb(190 184 255 / 0.11)",
       "light": "rgb(28 30 60 / 0.1)"
-    },
-    {
-      "name": "--color-tint",
-      "dark": "var(--tint-servers)",
-      "light": null
     },
     {
       "name": "--color-accent",
@@ -358,109 +347,24 @@
       "light": null
     },
     {
-      "name": "--color-direct",
-      "dark": "var(--tint-direct)",
+      "name": "--color-talk",
+      "dark": "var(--tint-talk)",
       "light": null
     },
     {
-      "name": "--color-voice",
-      "dark": "#46b57a",
-      "light": "#2fa066"
-    },
-    {
-      "name": "--color-voice-ink",
-      "dark": "#46b57a",
-      "light": "#1b6e44"
-    },
-    {
-      "name": "--color-joined",
-      "dark": "var(--tint-joined)",
-      "light": null
-    },
-    {
-      "name": "--color-online",
-      "dark": "#46b57a",
-      "light": "#2fa066"
-    },
-    {
-      "name": "--color-idle",
-      "dark": "#e2b33c",
-      "light": null
-    },
-    {
-      "name": "--color-dnd",
-      "dark": "#e5484d",
-      "light": null
-    },
-    {
-      "name": "--color-offline",
-      "dark": "#6f7289",
-      "light": null
-    },
-    {
-      "name": "--color-pending",
-      "dark": "#e2b33c",
+      "name": "--color-events",
+      "dark": "var(--tint-events)",
       "light": null
     },
     {
       "name": "--color-danger",
       "dark": "#ef6b6b",
-      "light": null
+      "light": "#d13438"
     },
     {
       "name": "--color-warning",
       "dark": "#e2b33c",
       "light": "#9a6212"
-    },
-    {
-      "name": "--color-notice",
-      "dark": "rgb(226 179 60 / 0.2)",
-      "light": "rgb(250 200 70 / 0.34)"
-    },
-    {
-      "name": "--color-notice-line",
-      "dark": "rgb(226 179 60 / 0.38)",
-      "light": "rgb(214 158 30 / 0.42)"
-    },
-    {
-      "name": "--color-live",
-      "dark": "#e5484d",
-      "light": null
-    },
-    {
-      "name": "--color-event",
-      "dark": "var(--tint-event)",
-      "light": null
-    },
-    {
-      "name": "--color-event-steady",
-      "dark": "var(--event-base)",
-      "light": null
-    },
-    {
-      "name": "--color-event-ink",
-      "dark": "color-mix(in srgb, var(--tint-event) 65%, white)",
-      "light": "color-mix(in srgb, var(--tint-event) 80%, black)"
-    },
-    {
-      "name": "--color-event-live",
-      "dark": "color-mix(in srgb, var(--tint-event) 82%, black)",
-      "light": "var(--tint-event)"
-    },
-    {
-      "name": "--color-crown",
-      "dark": "#e2b33c",
-      "light": null
-    },
-    {
-      "name": "--color-link",
-      "dark": "#8cb4ff",
-      "light": "#3d63c9"
-    },
-    {
-      "name": "--color-menu",
-      "dark": "#1b1c27",
-      "light": "#ffffff"
     },
     {
       "name": "--color-scrim",
@@ -493,9 +397,19 @@
       "light": "0 24px 60px -16px rgb(30 30 70 / 0.3)"
     },
     {
+      "name": "--elevation-tray",
+      "dark": "inset 0 2px 6px -2px rgb(0 0 0 / 0.45), inset 0 1px 0 rgb(255 255 255 / 0.07)",
+      "light": "inset 0 2px 6px -2px rgb(30 30 70 / 0.12), inset 0 1px 0 rgb(28 30 60 / 0.09)"
+    },
+    {
       "name": "--elevation-key",
       "dark": "inset 0 1px 0 rgb(255 255 255 / 0.07), inset 0 -2px 0 rgb(6 5 24 / 0.35), 0 1px 2px rgb(6 5 24 / 0.35)",
       "light": "inset 0 -2px 0 rgb(30 30 70 / 0.1), 0 1px 2px rgb(30 30 70 / 0.12)"
+    },
+    {
+      "name": "--color-tint",
+      "dark": "var(--tint-servers)",
+      "light": null
     },
     {
       "name": "--tint-servers",
@@ -503,28 +417,18 @@
       "light": null
     },
     {
-      "name": "--tint-direct",
-      "dark": "#3ba596",
-      "light": null
+      "name": "--tint-talk",
+      "dark": "#46b57a",
+      "light": "#2fa066"
     },
     {
-      "name": "--tint-call",
-      "dark": "#43ad74",
-      "light": null
-    },
-    {
-      "name": "--tint-joined",
-      "dark": "var(--color-voice)",
-      "light": null
-    },
-    {
-      "name": "--event-base",
+      "name": "--tint-events-base",
       "dark": "#4a8be0",
       "light": "#2f6fd0"
     },
     {
-      "name": "--tint-event",
-      "dark": "var(--event-base)",
+      "name": "--tint-events",
+      "dark": "var(--tint-events-base)",
       "light": null
     }
   ]

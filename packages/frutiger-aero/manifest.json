@@ -2,10 +2,10 @@
   "$schema": "../../schema/manifest.schema.json",
   "id": "frutiger-aero",
   "name": "Frutiger Aero",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "broski",
   "licence": "CC-BY-NC-4.0",
-  "description": "Powrót do Visty i Siódemki: szklane panele z poświatą, bańki płynące po niebie, błyszczące przyciski, okna w stylu Windows 7 i szklane ludziki zamiast kropek statusu. Dzień i noc z zorzą. W zestawie szklane, dzwonkowe dźwięki do wszystkich zdarzeń.",
+  "description": "Frutiger Aero dla talkative. Wygląda trochę jak w kuchni Pyża.",
   "talkative": ">=0.7",
   "contents": {
     "themes": {

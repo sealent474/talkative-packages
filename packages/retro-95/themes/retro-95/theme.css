@@ -212,6 +212,18 @@ main {
   color: var(--r-sel-ink) !important;
   box-shadow: none !important;
 }
+/* ikony i opisy na granatowym zaznaczeniu: białe, jak w Win95 */
+:is([data-part='dialog'], [data-part='channel-list']) [aria-current='page'] :is(*, svg) {
+  color: var(--r-sel-ink) !important;
+  stroke: currentColor;
+}
+
+/* jasny tryb: kolorowe ikony (np. słuchawka połączenia) czarne jak reszta,
+   zielony ginie na turkusowym pulpicie */
+:root[data-theme='light'] :is(button, a) :is(.text-talk, .text-online, .text-voice),
+:root[data-theme='light'] :is(button, a):is(.text-talk, .text-online, .text-voice) {
+  color: var(--r-ink) !important;
+}
 
 /* zaznaczenie i hover w menu/listach */
 :is([role='menuitem'], [role='menuitemradio'], [role='menuitemcheckbox'], [role='option']):is([data-highlighted], [aria-selected='true']) {

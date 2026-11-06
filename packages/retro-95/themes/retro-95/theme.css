@@ -390,6 +390,22 @@ main {
   border: 0 !important;
 }
 
+
+/* ------------------------------------------- pole wiadomości: jednolite */
+[data-part='composer'] :is(.bg-raised, .bg-surface-raised, .bg-surface, .bg-field, .bg-tray, .bg-card, .bg-hover):not(button) {
+  background: transparent !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+[data-part='composer'] { padding: 2px !important; }
+
+/* ułożone na zakładkę awatary (np. Mutual Friends): przy kwadratach
+   rozsuwamy je na odstęp zamiast nakładać */
+:root[data-theme] [class*='-space-x-'] > * {
+  margin-inline: 0 3px !important;
+}
+[class*='-space-x-'] > :is(img, span, div) { box-shadow: var(--r-sunken) !important; padding: 1px; background: var(--r-face); }
+
 /* --------------------------------------------------- paski przewijania */
 :root[data-theme] ::-webkit-scrollbar { width: 16px; height: 16px; background: var(--r-face); }
 :root[data-theme] ::-webkit-scrollbar-track {

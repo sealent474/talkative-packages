@@ -308,6 +308,22 @@ main {
 }
 :root[data-theme] button[role='switch'][data-state='checked']::before { content: '[x]'; color: var(--t-ink); }
 
+
+/* ------------------------------------------- pole wiadomości: jednolite */
+[data-part='composer'] :is(.bg-raised, .bg-surface-raised, .bg-surface, .bg-field, .bg-tray, .bg-card, .bg-hover):not(button) {
+  background: transparent !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+[data-part='composer'] { padding: 2px !important; }
+
+/* ułożone na zakładkę awatary (np. Mutual Friends): przy kwadratach
+   rozsuwamy je na odstęp zamiast nakładać */
+:root[data-theme] [class*='-space-x-'] > * {
+  margin-inline: 0 3px !important;
+}
+[class*='-space-x-'] > :is(img, span, div) { outline: 1px solid var(--t-line); outline-offset: 1px; }
+
 /* --------------------------------------------------- paski przewijania */
 :root[data-theme] ::-webkit-scrollbar { width: 10px; height: 10px; background: var(--t-bg); }
 :root[data-theme] ::-webkit-scrollbar-track { background: var(--t-bg); box-shadow: inset 1px 0 0 var(--t-line-soft); }
